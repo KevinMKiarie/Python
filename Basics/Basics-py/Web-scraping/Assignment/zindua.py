@@ -1,7 +1,7 @@
-import re
 import csv
-import requests
+import re
 
+import requests
 from bs4 import BeautifulSoup
 
 url = "https://www.barnesandnoble.com/"

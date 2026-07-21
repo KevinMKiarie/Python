@@ -1,7 +1,8 @@
-import requests
-import re
-from bs4 import BeautifulSoup
 import csv
+import re
+
+import requests
+from bs4 import BeautifulSoup
 
 url = "https://hojaleaks.com/"
 response = requests.get(url)
