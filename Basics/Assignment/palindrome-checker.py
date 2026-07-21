@@ -3,10 +3,10 @@
 
 
 def is_palindrome(input_str):
-    if(input_str == input_str[::-1]):
-        print(input_str,'is a palindrome Good Job!')
+    if input_str == input_str[::-1]:
+        print(input_str, "is a palindrome Good Job!")
     else:
-        print(input_str,'is not a palindrome try again.')
+        print(input_str, "is not a palindrome try again.")
 
 
-is_palindrome('non')
+is_palindrome("non")

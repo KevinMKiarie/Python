@@ -1,4 +1,4 @@
-list = ['1','Adam','Meran']
+list = ["1", "Adam", "Meran"]
 print(list)
 
 # methods of lists
@@ -9,11 +9,11 @@ print(list)
 # list.index
 # list.sort()
 
-list1= ['apple','orange','banana','kiwi']
+list1 = ["apple", "orange", "banana", "kiwi"]
 
 print(list1)
 
-list2 =['apple',[3,4,5],'orange','banana']
+list2 = ["apple", [3, 4, 5], "orange", "banana"]
 print(list2)
 # index
 print(list1[2])
@@ -23,19 +23,19 @@ print(list2[1][2])
 print(list1[-1])
 # slicing
 print(list1[1:3])
-# 
+#
 print(list1[3:])
 # appending
 
-list1.append('guava')
+list1.append("guava")
 
 print(list1)
 # extending
 
-list1.extend(['watermelon','muskmelon'])
+list1.extend(["watermelon", "muskmelon"])
 
 print(list1)
-# deleting an array 
+# deleting an array
 
 del list1[5]
 print(list1)
@@ -52,4 +52,4 @@ list1.reverse()
 print(list1)
 # indexing
 
-print(list1.index('guava'))
+print(list1.index("guava"))

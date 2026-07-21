@@ -1,13 +1,13 @@
 # data types in python
 
 # string
-name = 'Chicken Box'
+name = "Chicken Box"
 
-county = 'Kiambu'
+county = "Kiambu"
 
-age = '35'
+age = "35"
 
-height = '1.25'
+height = "1.25"
 
 # integer
 number = 20

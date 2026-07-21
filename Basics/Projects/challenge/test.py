@@ -8,7 +8,7 @@
 # Write a function called replace_email_addresses(string, replacement) that takes in a string and a replacement string, and replaces all email addresses in the given string with the replacement string.
 # Use the provided test cases to test your functions
 # Example:
-# string = "Please contact info@example.com for assistance. Phone: (123) 456-7890 or (111) 222-3333" print(extract_phone_numbers(string)) # Output: ['(123) 456-7890', '(111) 222-3333'] print(extract_email_addresses(string)) # Output: ['info@example.com'] print(replace_email_addresses(string, "REPLACED")) # Output: "Please contact REPLACED for assistance. Phone: (123) 456-7890 or (111) 222-3333" 
+# string = "Please contact info@example.com for assistance. Phone: (123) 456-7890 or (111) 222-3333" print(extract_phone_numbers(string)) # Output: ['(123) 456-7890', '(111) 222-3333'] print(extract_email_addresses(string)) # Output: ['info@example.com'] print(replace_email_addresses(string, "REPLACED")) # Output: "Please contact REPLACED for assistance. Phone: (123) 456-7890 or (111) 222-3333"
 # Note:
 # Phone numbers and email addresses can appear in any order and more than once in the provided string.
 # Phone numbers may or may not have spaces or dashes in between digits.
@@ -38,6 +38,3 @@
 
 
 # def replace_email_address(string):
-
-
-

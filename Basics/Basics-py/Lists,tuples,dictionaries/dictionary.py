@@ -7,7 +7,7 @@
 # dict.popItem() - removes item of the last possible key item
 
 
-dict1 = {1:'apple',2:'john',3:'Fola',4:'Sinclaire'}
+dict1 = {1: "apple", 2: "john", 3: "Fola", 4: "Sinclaire"}
 
 
 print(dict1)
@@ -26,10 +26,10 @@ print(dict1.keys())
 # values
 print(dict1.values())
 # updating any element in the dict
-dict1.update({2:'Watermelon'})
+dict1.update({2: "Watermelon"})
 print(dict1)
 # appending
-dict1.update({4:'Conlar'})
+dict1.update({4: "Conlar"})
 print(dict1)
 # removing the last element from the dictionary
 dict1.popitem()
@@ -39,12 +39,10 @@ print(dict1)
 for name in dict1:
     print(dict1[name])
 # gives the arrayed list an index and the info
-for x,y in dict1.items():
-    print(x,y)
+for x, y in dict1.items():
+    print(x, y)
 # copying information in the dictionary onto another dictionary
 
 dict_c = dict1.copy()
 
 print(dict_c)
-
-

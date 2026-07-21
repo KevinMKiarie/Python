@@ -5,10 +5,10 @@
 # except:
 #     x = int(fella)
 
-# print(x) 
+# print(x)
 
 # max function-- prints out maximum value of the futher most alphabet or numerals
 
-big = max('12345')
+big = max("12345")
 
 print(big)

@@ -3,19 +3,19 @@ import re
 from bs4 import BeautifulSoup
 import csv
 
-url ='https://hojaleaks.com/'
+url = "https://hojaleaks.com/"
 response = requests.get(url)
 
 html_content = response.text
 
-soup =BeautifulSoup(html_content,'html.parser')
+soup = BeautifulSoup(html_content, "html.parser")
 
 
 print(soup)
 
 data = []
 
-headings = soup.find_all('h1')
+headings = soup.find_all("h1")
 
 for heading in headings:
     header = heading.text
@@ -23,6 +23,6 @@ for heading in headings:
     data.append(header)
     print(heading.text)
 
-with open('headings.csv','w',newline='') as csvfile:
+with open("headings.csv", "w", newline="") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerows(data)

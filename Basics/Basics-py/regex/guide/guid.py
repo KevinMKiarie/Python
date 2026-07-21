@@ -33,20 +33,20 @@
 
 import re
 
-gender = open('guide.txt')
+gender = open("guide.txt")
 
 for man in gender:
     man = man.rstrip()
 
-    if re.search('sight',man):
+    if re.search("sight", man):
 
         print(man)
 
-import re 
+import re
 
-xl= 'in the inn i found rest. in the inn away from the rest. in the in i tried to dread. in the in i come in test'
+xl = "in the inn i found rest. in the inn away from the rest. in the in i tried to dread. in the in i come in test"
 x = "2 of my mates are lovely, only time can decipher the 3 in space. I for 1 can atone greatness,for my love is only in 1's and 0's"
-y = re.findall('[0-9]+',x)
-y = re.findall('[Aeiou]+',x)
+y = re.findall("[0-9]+", x)
+y = re.findall("[Aeiou]+", x)
 
 print(y)

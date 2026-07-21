@@ -4,11 +4,13 @@
 # \s - matches any whitespace character
 import re
 
-def match_plate(pattern,alphanumeric):
 
-    match = re.match(pattern,alphanumeric)
+def match_plate(pattern, alphanumeric):
 
-CarA = 'KCC 735 K'
-pattern = r'\w{3}{s}\d{3}\w'
+    match = re.match(pattern, alphanumeric)
 
-match_plate(pattern,CarA)
+
+CarA = "KCC 735 K"
+pattern = r"\w{3}{s}\d{3}\w"
+
+match_plate(pattern, CarA)

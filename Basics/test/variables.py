@@ -1,5 +1,5 @@
-name = 'Kevin'
-greeting= 'Hello'
+name = "Kevin"
+greeting = "Hello"
 
-message= (greeting +' '+ name)
+message = greeting + " " + name
 print(message)

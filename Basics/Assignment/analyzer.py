@@ -13,44 +13,45 @@
 # Example Usage:
 # python
 
-# student_grades = [("Alice", 89.5), ("Bob", 92.3), ("Charlie", 78.9), ("David", 85.6)] 
-# operation = "average" 
-# result = grade_analyzer(student_grades, operation) 
-# print(result) # Output: 86.825 
+# student_grades = [("Alice", 89.5), ("Bob", 92.3), ("Charlie", 78.9), ("David", 85.6)]
+# operation = "average"
+# result = grade_analyzer(student_grades, operation)
+# print(result) # Output: 86.825
 
-# operation = "highest" 
-# result = grade_analyzer(student_grades, operation) 
-# print(result) # Output: 92.3 
+# operation = "highest"
+# result = grade_analyzer(student_grades, operation)
+# print(result) # Output: 92.3
 
-# operation = "lowest" 
-# result = grade_analyzer(student_grades, operation) 
-# print(result) # Output: 78.9 
+# operation = "lowest"
+# result = grade_analyzer(student_grades, operation)
+# print(result) # Output: 78.9
 
-# operation = "median" 
-# result = grade_analyzer(student_grades, operation) 
-# # Raises ValueError with appropriate error message 
+# operation = "median"
+# result = grade_analyzer(student_grades, operation)
+# # Raises ValueError with appropriate error message
 # Note:
 # You can assume that the student_grades list will always have at least one element.
 # You are not allowed to use any built-in functions or libraries for calculating averages, maximums, or minimums. Implement the logic yourself using lists and tuples.
 # Make sure your code is properly structured
 
 
-def grade_analyzer(student_grades,operations):
-    operations=['highest', 'lowest','median']
+def grade_analyzer(student_grades, operations):
+    operations = ["highest", "lowest", "median"]
 
-    if operations == 'highest':
-        highest_grade=max(grade for grade in student_grades)
+    if operations == "highest":
+        highest_grade = max(grade for grade in student_grades)
         return highest_grade
-    elif operations == 'lowest':
+    elif operations == "lowest":
         lowest_grade = min(grade for grade in student_grades)
         return lowest_grade
-    elif operations == 'median':
+    elif operations == "median":
         median_grades = sum(grade for grade in student_grades)
-        return median_grades/len(student_grades)
+        return median_grades / len(student_grades)
     else:
-        if(operations == '' or student_grades == ''):
-            print('fill in all the required fields')
+        if operations == "" or student_grades == "":
+            print("fill in all the required fields")
 
-   
-grade_analyzer([('Mercy',66.7),('Joram', 22.7),('Kevin',88.90),('Vicky',56.9)],'lowest')
-     
+
+grade_analyzer(
+    [("Mercy", 66.7), ("Joram", 22.7), ("Kevin", 88.90), ("Vicky", 56.9)], "lowest"
+)

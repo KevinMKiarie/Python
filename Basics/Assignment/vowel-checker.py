@@ -3,24 +3,26 @@
 # Example:
 # python
 
-# count_vowels("Hello, World!") # Output: 3 
-# count_vowels("Python is awesome!") # Output: 6 
-# count_vowels("AEIOU") # Output: 5 
+# count_vowels("Hello, World!") # Output: 3
+# count_vowels("Python is awesome!") # Output: 6
+# count_vowels("AEIOU") # Output: 5
 # Note:
 # You can assume that the input string will only contain alphabetic characters.
 # Spaces and special characters should not be counted as vow
+
 
 def count_vowels(string):
 
     count = 0
 
     for character in string:
-        if(character in string):
+        if character in string:
             count += 1
 
     return count
 
-string= input('string:')
-count= count_vowels (string)
 
-print('Count:', count)
+string = input("string:")
+count = count_vowels(string)
+
+print("Count:", count)
